@@ -1,0 +1,30 @@
+# R: Data Structures
+
+## Homework
+
+1.  Create an array of two 3x3 matrices from the given vectors.
+
+```{r}
+first_vector <- c(1,2,3,4,5,6,7,8,9)
+second_vector <- c(9,8,7,6,5,4,3,2,1)
+x3 <- array(c(first_vector,second_vector),dim = c(3,3,2))
+x3
+```
+
+2.  In the above matrix that you created, print the value 5 by indexing in to the matrix.
+
+3.  Print the third row of the first matrix.
+
+4.  Print the second column of both matrices.
+
+    ```{r}
+    x3[2,2,2]
+    ```
+
+    ```{r}
+    x3[3,,1]
+    ```
+
+    ```{r}
+    x3[,2,]
+    ```
